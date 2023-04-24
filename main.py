@@ -38,12 +38,12 @@ def hangman():
             guesses_left -= 1
 
         letters_guessed.append(letter)
-        
-        if guess == word:
+
+    if guess == word:
         print("Congratulations, you won!")
     else:
         print("Sorry, you lost. The word was " + word + ".")
-        
+
     play_again = input("Do you want to play again? (yes/no)").lower()
     if play_again == "yes":
         hangman()
