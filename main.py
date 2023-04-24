@@ -50,4 +50,5 @@ def hangman():
     else:
         print("Thanks for playing!")
 
-
+# Start the game
+hangman()
