@@ -21,3 +21,20 @@ def hangman():
     guess = "_" * len(word)
     guesses_left = 6
     letters_guessed = []
+
+    while guesses_left > 0 and guess != word:
+        print("Guess the word: " + guess)
+        print("Guesses left: " + str(guesses_left))
+        print("Letters guessed: " + str(letters_guessed))
+        letter = input("Guess a letter: ").lower()
+
+        if letter in letters_guessed:
+            print("You already guessed that letter. Try again.")
+        elif letter in word:
+            print("Correct!")
+            guess = update_word(word, guess, letter)
+        else:
+            print("Wrong!")
+            guesses_left -= 1
+
+        letters_guessed.append(letter)
