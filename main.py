@@ -13,3 +13,11 @@ def update_word(word, guess, letter):
         if word[i] == letter:
             guess = guess[:i] + letter + guess[i+1:]
     return guess
+
+# Main game loop
+def hangman():
+    print("Welcome to Hangman!")
+    word = choose_word()
+    guess = "_" * len(word)
+    guesses_left = 6
+    letters_guessed = []
