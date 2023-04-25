@@ -8,7 +8,7 @@ To run the Hangman game on your computer, you need to have Python 3.x installed.
 To download the source code for the game from GitHub, you can use the following command in your terminal/command prompt:
 
 
-`git clone [https://github.com/joshdewhust/Hangman.git](https://github.com/joshdewhurst/Hangman.git)`
+`git clone https://github.com/joshdewhurst/Hangman.git`
 This will create a new directory named Hangman in your current directory, containing the source code for the game.
 
 # Usage
